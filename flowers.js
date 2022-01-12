@@ -26,13 +26,15 @@ const addFlower = (flowerObject) => {
 
 }
 
-
+//this variable is a function containing an empty array
 const findExpensiveFlowers = () => {
     const expensiveFlowers = []  // Do not change this code
 
-    for (const niceFlowers of flowers){
-        if (niceFlowers.price >= 1){
-            expensiveFlowers.push(niceFlowers)
+//this for.. of loop iterates through the flowers objects and finds 
+// flowers >= $1 and adds that flower to the expensiveFlowers array
+    for (const flower of flowers){
+        if (flower.price >= 1){
+            expensiveFlowers.push(flower)
         }
     }
     /*
@@ -44,7 +46,7 @@ const findExpensiveFlowers = () => {
 
 
 
-
+// this returns the array of expensiveFlowers
     return expensiveFlowers  // Do not change this code
 }
 
